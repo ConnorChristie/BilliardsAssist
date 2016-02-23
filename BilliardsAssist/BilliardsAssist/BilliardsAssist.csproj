@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{AF8C577B-E752-4F10-8D22-466AC7028543}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BilliardsAssist</RootNamespace>
     <AssemblyName>BilliardsAssist</AssemblyName>
@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -44,6 +47,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BilliardsAssist.cs" />
+    <Compile Include="Common\BilliardsItem.cs" />
+    <Compile Include="Common\ShapeItems\RectangleItem.cs" />
+    <Compile Include="Models\Ball.cs" />
+    <Compile Include="Common\ShapeItems\CircularItem.cs" />
+    <Compile Include="Models\Cue.cs" />
+    <Compile Include="Models\Pocket.cs" />
+    <Compile Include="Models\Table.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -51,7 +61,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Engine\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
