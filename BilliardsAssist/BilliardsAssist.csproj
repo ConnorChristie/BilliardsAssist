@@ -49,6 +49,14 @@
     <Compile Include="BilliardsAssist.cs" />
     <Compile Include="Common\BilliardsItem.cs" />
     <Compile Include="Common\ShapeItems\RectangleItem.cs" />
+    <Compile Include="Engine\BallEngine.cs" />
+    <Compile Include="Engine\CueEngine.cs" />
+    <Compile Include="Engine\PocketEngine.cs" />
+    <Compile Include="Engine\TableEngine.cs" />
+    <Compile Include="Interfaces\ICueEngine.cs" />
+    <Compile Include="Interfaces\IBallEngine.cs" />
+    <Compile Include="Interfaces\IPocketEngine.cs" />
+    <Compile Include="Interfaces\ITableEngine.cs" />
     <Compile Include="Models\Ball.cs" />
     <Compile Include="Common\ShapeItems\CircularItem.cs" />
     <Compile Include="Models\Cue.cs" />
@@ -59,9 +67,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Engine\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
